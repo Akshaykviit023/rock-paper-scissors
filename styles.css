@@ -247,5 +247,20 @@ li::marker {
     position: relative;
 }
 .hoorayImg > img{
+    top: 10rem;
     position: absolute;
+    margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+text-align: center;
+}
+
+
+.hoorayContent{
+    padding-top: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
