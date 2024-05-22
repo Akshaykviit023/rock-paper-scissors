@@ -153,3 +153,26 @@ function nextPage() {
     mainGame.style.display = 'none';
     hoorayPage.style.display = 'block';
 }
+
+function togglePlayAgain() {
+    var hoorayPage = document.getElementById('hoorayPage');
+    var mainGame = document.getElementById('mainGame');
+
+    localStorage.setItem('playerScore', 0);
+    localStorage.setItem('computerScore', 0);
+
+     // Retrieve scores from localStorage
+     const playerScore = localStorage.getItem('playerScore');
+     const computerScore = localStorage.getItem('computerScore');
+
+    const playerScoreBoard = document.querySelector('.yourScore');
+    const computerScoreBoard = document.querySelector('.computerScore');
+
+    computerScoreBoard.textContent = computerScore;
+    playerScoreBoard.textContent = playerScore;
+
+    mainGame.style.display = 'block';
+    hoorayPage.style.display = 'none';
+
+
+}

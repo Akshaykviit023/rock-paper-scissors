@@ -242,3 +242,10 @@ li::marker {
     font-size: 21px;
     font-weight: 600;
 }
+
+.hoorayImg{
+    position: relative;
+}
+.hoorayImg > img{
+    position: absolute;
+}
