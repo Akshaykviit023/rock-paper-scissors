@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    font-family: "Roboto", sans-serif;
+    height: 100vh;
+    width: 100%;
+    background-color: #8cc461;
+    margin: 0;
+}
+
+.scoreboard{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.titleContainer > h1{
+    margin: 0;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 6px;
+}
+
+.scoreboardContainer{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    border: white solid 2px;
+    border-radius: 1rem;
+    color: white;
+    padding: 1rem;
+}
+
+.scoresContainer{
+
+    display: flex;
+    gap: 2rem;
+}
+p{
+    margin: 0;
+}
+.scoresContainer > div{
+    background-color: white;
+    color: black;
+    border-radius: 1rem;
+    font-size: 17px;
+    font-weight: 600;
+    width: 140px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.line1{
+    transform: translate(-100px, 60px);
+    position: absolute;
+    width: 350px;
+    height: 20px;
+    background-color: black;
+    z-index: -1;
+}
+.line2{
+    transform: translate(-210px, 200px) rotate(-125deg);
+    position: absolute;
+    width: 350px;
+    height: 20px;
+    background-color: black;
+    z-index: -1;
+}
+.line3{
+    transform: translate(0px, 200px) rotate(125deg);
+    position: absolute;
+    width: 350px;
+    height: 20px;
+    background-color: black;
+    z-index: -1;
+}
+.line1{
+    transform: translate(-100px, 60px);
+    position: absolute;
+    width: 350px;
+    height: 20px;
+    background-color: black;
+    z-index: -1;
+}
+.computerScore, .yourScore{
+    margin: 0;
+    font-size: 68px;
+    font-weight: 700;
+}
+
+.gameBody{
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+}
+
+.gameContainer{
+    position: relative;
+}
+
+.gameContainer > div{
+    position: absolute;
+}
+.innerCircle{
+    background-color: white;
+    border-radius: 9999px;
+    width: 110px;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stoneContainer{
+    transform: translateX(-200px);
+    padding: 1rem;
+    background-color: #0074B6;
+    border-radius: 9999px;
+}
+
+.scissorContainer{
+    transform: translateX(200px);
+    padding: 1rem;
+    background-color: #BD00FF;
+    border-radius: 9999px;
+}
+
+.paperContainer{
+    transform: translateY(300px);
+    padding: 1rem;
+    background-color: #FFA943;
+    border-radius: 9999px;
+}
+
+.paper{
+    padding: 1rem;
+    background-color: #FFA943;
+    border-radius: 9999px;
+}
+
+.scissor{
+    padding: 1rem;
+    background-color: #BD00FF;
+    border-radius: 9999px;
+}
+
+.stone{
+    padding: 1rem;
+    background-color: #0074B6;
+    border-radius: 9999px;
+}
+
+.result{
+    margin-top: 10rem;
+    position: relative;
+    display: none;
+
+}
+
+.finalVerdict{
+    position: relative;
+    text-align: center;
+}
+.playerChoice, .computerChoice{
+    position: absolute;
+}
+.playerChoice{
+    transform: translate(-200px, -200px);
+
+}
+
+.computerChoice{
+    transform: translate(250px, -200px);
+}
+.restartBtn{
+    border: none;
+    outline: none;
+    background-color: white;
+    border-radius: 9px;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 174px;
+    height: 44px;
+}
+
+.footerBtn{
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.footerBtn > button{
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    border-radius: 0.5rem;
+    height: 40px;
+    width: 119px;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+ul{
+    list-style-type: square;
+}
+li::marker {
+    color: #FFD600;
+  }
+.gameRulesContainer{
+    width: 278px;
+    height: 325px;
+    position: absolute;
+    top: -22rem;
+    right: 9.5rem;
+    border: white solid 4px;
+    background-color: #004429;
+    color: white;
+    border-radius: 1rem;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15.23px;
+}
