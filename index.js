@@ -1,7 +1,6 @@
 let playerScore = localStorage.getItem('playerScore') ? parseInt(localStorage.getItem('playerScore')) : 0;
 let computerScore = localStorage.getItem('computerScore') ? parseInt(localStorage.getItem('computerScore')) : 0;
 
-// Update the scoreboards with the initial scores
 document.querySelector('.yourScore').textContent = playerScore;
 document.querySelector('.computerScore').textContent = computerScore;
 
@@ -91,7 +90,6 @@ const playerChoice = (choice) => {
                 verdict = 'You Win';
             }
         }
-        // Save the updated scores to localStorage
         localStorage.setItem('playerScore', playerScore);
         localStorage.setItem('computerScore', computerScore);
 
@@ -102,7 +100,6 @@ const playerChoice = (choice) => {
         const gameBody = document.getElementById('gameBody');
         const resultContainer = document.getElementById('resultContainer');
         
-        // Hide the gameBody and show the resultContainer
         gameBody.style.display = 'none';
         resultContainer.style.display = 'flex';
         resultContainer.style.justifyContent = 'center';
@@ -132,7 +129,6 @@ const restartGame = () => {
     const gameBody = document.getElementById('gameBody');
     const resultContainer = document.getElementById('resultContainer');
 
-    // Hide the resultContainer and show the gameBody
     resultContainer.style.display = 'none';
     gameBody.style.display = 'flex';
 }
@@ -161,7 +157,6 @@ function togglePlayAgain() {
     localStorage.setItem('playerScore', 0);
     localStorage.setItem('computerScore', 0);
 
-     // Retrieve scores from localStorage
      const playerScore = localStorage.getItem('playerScore');
      const computerScore = localStorage.getItem('computerScore');
 
