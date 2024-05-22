@@ -9,6 +9,7 @@
   <script src="index.js" defer></script>
 </head>
 <body>
+    <div class="mainGame" id="mainGame">
     <div class="scoreboard">
         <div class="scoreboardContainer">
         <div class="titleContainer">
@@ -63,7 +64,7 @@
 
     <div class="footerBtn">
         <button class="rulesBtn" onclick="toggleGameRules()">RULES</button>
-        <button class="nextBtn">NEXT</button>
+        <button class="nextBtn" onclick="nextPage()">NEXT</button>
         <div class="gameRulesContainer" id="gameRulesContainer">
             <div class="gameRules">
                 <h1>Game Rules</h1>
@@ -76,6 +77,13 @@
             </div>
         </div>
     </div>
-    
+</div>
+<div class="hoorayPage" id="hoorayPage">
+    <img src="" alt="">
+    <h1>HURRAY!!</h1>
+    <h2>YOU WON THE GAME</h2>
+
+    <button class="playAgain">PLAY AGAIN</button>
+</div>
 </body>
 </html>

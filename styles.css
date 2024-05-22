@@ -213,6 +213,7 @@ li::marker {
     color: #FFD600;
   }
 .gameRulesContainer{
+    display: none;
     width: 278px;
     height: 325px;
     position: absolute;
@@ -225,4 +226,19 @@ li::marker {
     font-size: 13px;
     font-weight: 400;
     line-height: 15.23px;
+}
+
+.hoorayPage{
+    display: none;
+}
+
+.playAgain{
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    border-radius: 0.5rem;
+    height: 40px;
+    width: 174px;
+    font-size: 21px;
+    font-weight: 600;
 }

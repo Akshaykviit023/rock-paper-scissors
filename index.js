@@ -145,3 +145,11 @@ function toggleGameRules() {
         gameRulesContainer.style.display = 'none';
     }
 }
+
+function nextPage() {
+    var hoorayPage = document.getElementById('hoorayPage');
+    var mainGame = document.getElementById('mainGame');
+
+    mainGame.style.display = 'none';
+    hoorayPage.style.display = 'block';
+}
